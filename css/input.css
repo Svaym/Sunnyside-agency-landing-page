@@ -26,7 +26,7 @@
 .header__menu {
 }
 .header__menu-list {
-  @apply fixed -left-[150%] mx-auto top-[4rem] bottom-0 right-0 bg-white text-[#458c7e] w-2/4 text-center h-[30%] p-4 text-lg flex flex-col justify-around transition-all duration-300 sm:left-0 sm:mx-0 sm:text-white sm:flex-row items-center sm:static sm:bg-inherit sm:pr-0 lg:gap-x-5
+  @apply fixed -left-[150%] mx-auto top-[4rem] bottom-0 right-0 bg-white text-[#458c7e] w-2/4 text-center h-[30%] p-4 text-lg flex flex-col justify-around transition-all duration-300 sm:left-0 sm:mx-0 sm:text-white sm:flex-row items-center sm:static sm:bg-inherit sm:pr-0 sm:justify-between sm:gap-x-3 lg:gap-x-5
 }
 .header__menu-item {
 }
