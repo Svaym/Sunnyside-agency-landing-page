@@ -16,12 +16,12 @@ module.exports = {
         'fraunces': ['Fraunces', 'sans-serif'],
       },
       backgroundImage: {
-        'header-mobile': "url('/images/mobile/image-header.jpg')",
-        'header-desktop': "url('/images/desktop/image-header.jpg')",
-        'graphic-mobile': "url('/images/mobile/image-graphic-design.jpg')",
-        'graphic-desktop': "url('/images/desktop/image-graphic-design.jpg')",
-        'photography-mobile': "url('/images/mobile/image-photography.jpg')",
-        'photography-desktop': "url('/images/desktop/image-photography.jpg')",
+        'header-mobile': "url('../images/mobile/image-header.jpg')",
+        'header-desktop': "url('../images/desktop/image-header.jpg')",
+        'graphic-mobile': "url('../images/mobile/image-graphic-design.jpg')",
+        'graphic-desktop': "url('../images/desktop/image-graphic-design.jpg')",
+        'photography-mobile': "url('../images/mobile/image-photography.jpg')",
+        'photography-desktop': "url('../images/desktop/image-photography.jpg')",
       }
     },
   },
