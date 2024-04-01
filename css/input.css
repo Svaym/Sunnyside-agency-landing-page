@@ -13,7 +13,7 @@
 
 /* HEADER */
 .header {
-  @apply pb-28 bg-[url('/images/mobile/image-header.jpg')] bg-no-repeat bg-cover bg-center md:pb-40 lg:bg-[url('/images/desktop/image-header.jpg')] lg:pb-44
+  @apply pb-28 bg-[url('../images/mobile/image-header.jpg')] bg-no-repeat bg-cover bg-center md:pb-40 lg:bg-[url('../images/desktop/image-header.jpg')] lg:pb-44
 }
 .header__inner {
   @apply flex justify-between items-center py-4
@@ -101,7 +101,7 @@
   @apply grid grid-cols-1 grid-rows-1 lp:grid-cols-2 lp:grid-rows-2
 }
 .opportunity__card--first {
-  @apply text-[#25564b] bg-[url('/images/mobile/image-graphic-design.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('/images/desktop/image-graphic-design.jpg')]
+  @apply text-[#25564b] bg-[url('../images/mobile/image-graphic-design.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('../images/desktop/image-graphic-design.jpg')]
 }
 .opportunity__title {
   @apply text-center text-2xl mt-96 sm:mt-[450px] md:mt-[600px] lp:mt-96 md:text-3xl
@@ -110,7 +110,7 @@
   @apply text-center mt-3 mb-8 max-w-72 mx-auto md:text-lg
 }
 .opportunity__card--second {
-  @apply text-[#19536b] bg-[url('/images/mobile/image-photography.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('/images/desktop/image-photography.jpg')]
+  @apply text-[#19536b] bg-[url('../images/mobile/image-photography.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('../images/desktop/image-photography.jpg')]
 }
 
 
