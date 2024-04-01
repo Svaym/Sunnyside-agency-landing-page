@@ -665,11 +665,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  height: 25%;
+  height: 30%;
   width: 50%;
   flex-direction: column;
   align-items: center;
-  row-gap: 1.25rem;
+  justify-content: space-around;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1rem;
