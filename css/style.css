@@ -669,7 +669,8 @@ body {
   width: 50%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1rem;
