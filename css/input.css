@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-barlow font-semibold
+  }
+}
+.container {
+  @apply mx-auto max-w-7xl px-2 w-full
+}
+
+
+/* HEADER */
+.header {
+  @apply pb-28 bg-[url('/images/mobile/image-header.jpg')] bg-no-repeat bg-cover bg-center md:pb-40 lg:bg-[url('/images/desktop/image-header.jpg')] lg:pb-44
+}
+.header__inner {
+  @apply flex justify-between items-center py-4
+}
+.header__logo {
+}
+.logo {
+  @apply lg:w-40 lg:h-8
+}
+.header__menu {
+}
+.header__menu-list {
+  @apply fixed -left-[150%] mx-auto top-[4rem] bottom-0 right-0 bg-white text-[#458c7e] w-2/4 text-center h-1/4 p-4 text-lg flex flex-col gap-y-5 transition-all duration-300 sm:left-0 sm:mx-0 sm:text-white sm:flex-row items-center sm:static sm:bg-inherit sm:pr-0 lg:gap-x-5
+}
+.header__menu-item {
+}
+.header__menu-link {
+  @apply transition-colors duration-300 ease-in rounded-2xl hover:bg-[#fad400] p-2 active:bg-[#fab700] sm:hover:text-[#23303e] sm:hover:bg-white sm:active:text-black sm:text-sm md:text-base lg:text-xl
+}
+.hamburger {
+  @apply block cursor-pointer sm:hidden
+}
+.hamburger.active .line:nth-child(2) {
+  @apply opacity-0
+}
+.hamburger.active .line:nth-child(1) {
+  @apply translate-y-2 rotate-45
+}
+.hamburger.active .line:nth-child(3) {
+  @apply translate-y-[-7px] rotate-[-45deg]
+}
+.header__menu-list.active {
+  @apply left-0
+}
+.line {
+  @apply bg-white block w-6 h-[3px] my-1
+}
+.header__title {
+  @apply text-3xl font-fraunces mt-11 sm:text-5xl uppercase text-white text-center
+}
+.header__arrow {
+  @apply mx-auto mt-20
+}
+
+/* INTRO */
+.intro {
+}
+.intro__content {
+  @apply grid grid-cols-1 grid-rows-4 min-[744px]:grid-cols-2 min-[744px]:grid-rows-2
+}
+.intro__brand {
+  @apply px-4 text-center sm:px-11 min-[744px]:text-left
+}
+.intro__title {
+  @apply font-fraunces font-bold text-[#23303e] text-3xl mt-3 sm:mt-14 min-[744px]:mt-4 lp:mt-12 lg:text-4xl lg:mt-14
+}
+.intro__desc {
+  @apply text-[#5a636c] mt-6 mb-4 sm:mt-9 sm:mb-11 sm:text-base min-[744px]:mt-4 min-[744px]:mb-4 lp:mt-7 lp:mb-6 lg:text-lg lg:my-9
+}
+.intro__link {
+  @apply text-[#23303e] text-base transition-colors duration-200 ease-out hover:text-[#000000] active:text-[#2e435a]
+}
+.intro__transform {
+  @apply row-start-1 row-end-2 min-[744px]:hidden
+}
+.intro__transform--second {
+  @apply hidden min-[744px]:block
+}
+.intro__stand-out {
+  @apply min-[744px]:hidden
+}
+.intro__stand-out--second {
+  @apply hidden min-[744px]:block
+}
+.intro__audience {
+  @apply px-4 text-center sm:px-11 min-[744px]:text-left
+}
+
+
+/* OPPORTUNITY */
+.opportunity {
+  @apply lp:max-h-[570px]
+}
+.opportunity__content {
+  @apply grid grid-cols-1 grid-rows-1 lp:grid-cols-2 lp:grid-rows-2
+}
+.opportunity__card--first {
+  @apply text-[#25564b] bg-[url('/images/mobile/image-graphic-design.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('/images/desktop/image-graphic-design.jpg')]
+}
+.opportunity__title {
+  @apply text-center text-2xl mt-96 sm:mt-[450px] md:mt-[600px] lp:mt-96 md:text-3xl
+}
+.opportunity__desc {
+  @apply text-center mt-3 mb-8 max-w-72 mx-auto md:text-lg
+}
+.opportunity__card--second {
+  @apply text-[#19536b] bg-[url('/images/mobile/image-photography.jpg')] bg-cover bg-top bg-no-repeat lp:bg-[url('/images/desktop/image-photography.jpg')]
+}
+
+
+/* TESTIMONIALS */
+.testimonials {
+  @apply pb-8 lp:px-4 lg:px-12 xl:px-24
+}
+.testimonials__title {
+  @apply text-center text-lg uppercase text-gray-400 font-light tracking-widest mt-8
+}
+.testimonials__content {
+  @apply lp:flex justify-between
+}
+.testimonials--first {
+}
+.testimonials__img {
+  @apply rounded-full max-w-24 mx-auto my-7
+}
+.testimonials__comment {
+  @apply mx-auto text-center max-w-72 text-gray-700 lp:max-w-64 t:max-w-80
+}
+.testimonials__name {
+  @apply text-center font-fraunces font-extrabold mt-3 t:text-lg
+}
+.testimonials__job {
+  @apply text-center text-gray-400 t:text-lg
+}
+
+
+/* PICTURES */
+.pictures {
+}
+.pictures__content {
+  @apply grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1
+}
+.milk {
+  @apply w-full lg:hidden
+}
+.milk--second {
+  @apply hidden lg:block
+}
+.orange {
+  @apply w-full lg:hidden
+}
+.orange--second {
+  @apply hidden lg:block
+}
+.cone {
+  @apply w-full lg:hidden
+}
+.cone-second {
+  @apply hidden lg:block
+}
+.sugar {
+  @apply w-full lg:hidden
+}
+.sugar--second {
+  @apply hidden lg:block
+}
+
+
+/* FOOTER */
+.footer {
+  @apply text-[#458c7e] bg-[#6bcfbf] py-12
+}
+.footer__inner {
+  @apply flex flex-col items-center text-center
+}
+.footer__logo {
+}
+.logo--second {
+  @apply transition-all duration-300 hover:brightness-75 active:brightness-95
+}
+.footer__menu {
+  @apply mt-3
+}
+.footer__menu-list {
+  @apply flex gap-x-9
+}
+.footer__menu-item {
+}
+.footer__menu-link {
+  @apply transition-colors duration-300 ease-out hover:text-[#31685c] active:text-[#1b3f37] md:text-lg lg:text-xl
+}
+.footer__socials {
+  @apply flex gap-x-4 mt-9
+}
+.social {
+  @apply transition-all duration-300 hover:brightness-75 active:brightness-95
+}
